@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.header-bottom-content .svg-icon:hover svg {
+  transform: rotate(-180deg);
+  transition: 0.2s all ease;
+}

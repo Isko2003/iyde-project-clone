@@ -1,0 +1,39 @@
+.searchContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.searchContainer input {
+  padding-right: 30px;
+  padding: 10px;
+  border-radius: 20px;
+  outline: none;
+  width: 400px;
+  border: 1px solid black;
+}
+
+.searchContainer::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: white;
+}
+
+.searchContainer svg {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+}
+
+.searchContainer input::placeholder {
+  font-weight: bold;
+  color: black;
+}
+
+.searchContainer input:focus::placeholder {
+  color: transparent;
+  transition: 0.3s all ease;
+}

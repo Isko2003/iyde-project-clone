@@ -1,0 +1,112 @@
+[
+  {
+    "id": "1",
+    "name": "Acqua di Parma Magnolia Nobile",
+    "brand": "Acqua di Parma",
+    "price": 249.99,
+    "currency": "AZN",
+    "stock": true,
+    "category": "Erkek Parfüm",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do",
+    "image": "https://api.iyde.az/uploads/2022/03/10/thumbnail/acqua-di-parmamagnolia-nobile_1564579500.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Adidas Ice Dive",
+    "brand": "Adidas",
+    "price": 179.5,
+    "currency": "AZN",
+    "stock": true,
+    "category": "Kadın Parfüm",
+    "description": "Ut enim ad minim veniam quis nostrud exercitation ullamco laboris",
+    "image": "https://api.iyde.az/uploads/2022/03/31/thumbnail/94_ADS007027_mainGT.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Agent Provocateur Agent Provocateur",
+    "brand": "Agent Provocateur",
+    "price": 320.75,
+    "currency": "AZN",
+    "stock": false,
+    "category": "Unisex Parfüm",
+    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse",
+    "image": "https://api.iyde.az/uploads/2022/04/07/thumbnail/98_agent-provocateuragent-provocateur_1564579588.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Agonist Solaris",
+    "brand": "Agonist",
+    "price": 199.99,
+    "currency": "AZN",
+    "stock": true,
+    "category": "Erkek Parfüm",
+    "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem",
+    "image": "https://api.iyde.az/uploads/2022/04/07/thumbnail/58_agonist-solaris_1564579627.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Ajmal Amber Musc",
+    "brand": "Ajmal",
+    "price": 225.0,
+    "currency": "AZN",
+    "stock": true,
+    "category": "Kadın Parfüm",
+    "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit",
+    "image": "https://api.iyde.az/uploads/2023/08/21/thumbnail/34_amber-musk.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Ajmal Amber Wood",
+    "brand": "Ajmal",
+    "price": 189.75,
+    "currency": "AZN",
+    "stock": false,
+    "category": "Kadın Parfüm",
+    "description": "At vero eos et accusamus et iusto odio dignissimos ducimus",
+    "image": "https://api.iyde.az/uploads/2022/03/10/thumbnail/ajmal-amber-wood_1564579649.png"
+  },
+  {
+    "id": "7",
+    "name": "Ajmal Qafiya 1",
+    "brand": "Ajmal",
+    "price": 159.5,
+    "currency": "AZN",
+    "stock": true,
+    "category": "Unisex Parfüm",
+    "description": "Qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores",
+    "image": "https://api.iyde.az/uploads/2022/04/07/thumbnail/55_ajmal-qafiya-1_1564579673.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Ajmal Verde",
+    "brand": "Ajmal",
+    "price": 175.25,
+    "currency": "AZN",
+    "stock": true,
+    "category": "Erkek Parfüm",
+    "description": "Et harum quidem rerum facilis est et expedita distinctio",
+    "image": "https://api.iyde.az/uploads/2022/03/10/thumbnail/ajmal-verde_1580724289.png"
+  },
+  {
+    "id": "9",
+    "name": "Ajmal Verve",
+    "brand": "Ajmal",
+    "price": 299.99,
+    "currency": "AZN",
+    "stock": false,
+    "category": "Unisex Parfüm",
+    "description": "Nam libero tempore cum soluta nobis est eligendi optio",
+    "image": "https://api.iyde.az/uploads/2022/04/07/thumbnail/6_ajmal-verve_1564579859.jpg"
+  },
+  {
+    "id": "10",
+    "name": "Alexandre J. Black Muscs",
+    "brand": "Alexandre",
+    "price": 210.0,
+    "currency": "AZN",
+    "stock": true,
+    "category": "Kadın Parfüm",
+    "description": "Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore",
+    "image": "https://api.iyde.az/uploads/2022/03/10/thumbnail/alexandre-j-black-muscs_1564579893.jpg"
+  }
+]
