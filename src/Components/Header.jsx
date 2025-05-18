@@ -1,17 +1,31 @@
 import React, { useState } from "react";
+import products from "../Mock/products.json";
 
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const filteredProducts = products.filter((product) =>
+    product.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  const goToHome = () => {
+    window.location.href = "/";
   };
 
   return (
     <section className="bg-white shadow-md">
       <div className="p-6 md:p-12 flex justify-between items-center max-w-7xl mx-auto">
         <div className="flex items-center gap-5">
-          <div className="cursor-pointer">
+          <div className="cursor-pointer" onClick={goToHome}>
             <svg
               width="122"
               height="119"
@@ -27,11 +41,13 @@ const Header = () => {
               ></path>
             </svg>
           </div>
-          <div className="relative hidden md:flex items-center bg-gray-100 rounded-full px-4 py-2">
+          <div className="relative hidden lg:flex items-center bg-gray-100 rounded-full px-4 py-2">
             <input
               type="text"
               placeholder="Öz Ətrini axtar"
               className="bg-transparent outline-none pr-8"
+              onChange={handleSearchChange}
+              value={searchTerm}
             />
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -42,10 +58,33 @@ const Header = () => {
             >
               <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
             </svg>
+            <div className="absolute top-12 left-0 w-full bg-white shadow-lg rounded-lg z-10 max-h-96 overflow-y-auto">
+              {searchTerm && filteredProducts.length > 0 ? (
+                filteredProducts.map((product) => (
+                  <div
+                    key={product.id}
+                    className="flex items-center gap-4 p-4 hover:bg-gray-100 cursor-pointer border-b"
+                  >
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-16 h-16 object-contain"
+                    />
+                    <span className="text-gray-800 font-medium">
+                      {product.name}
+                    </span>
+                  </div>
+                ))
+              ) : searchTerm ? (
+                <div className="p-4 text-center text-red-500">
+                  Məlumat tapılmadı
+                </div>
+              ) : null}
+            </div>
           </div>
         </div>
 
-        <div className="hidden md:flex items-center gap-5">
+        <div className="hidden lg:flex items-center gap-5">
           <div className="flex gap-3 items-center cursor-pointer">
             <svg
               width="31"
@@ -315,7 +354,7 @@ const Header = () => {
         ></div>
       )}
 
-      <div className="hidden md:block ">
+      <div className="hidden lg:block ">
         <div className="w-[80%] mx-auto py-6">
           <div className="flex items-center justify-center gap-12">
             <div className="flex items-center gap-2">

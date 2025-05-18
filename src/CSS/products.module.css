@@ -1,0 +1,38 @@
+.searchBar {
+  position: relative;
+  display: inline-block;
+}
+
+.searchBar svg {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+}
+.searchBar input::placeholder {
+  color: black;
+}
+
+.searchBar input:focus::placeholder {
+  color: transparent;
+  transition: 0.3s all ease;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product:hover img {
+  transform: scale(1.05);
+  transition: 0.5s all ease;
+}
+
+.customScrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.customScrollbar::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-radius: 4px;
+}
